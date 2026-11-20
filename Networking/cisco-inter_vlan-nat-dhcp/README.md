@@ -9,7 +9,7 @@ The network is segmented into multiple VLANs, with inter-VLAN communication hand
 The network also includes static routing, NAT/PAT for external connectivity, and Extended ACLs to control traffic between network segments.
 
 ## Network Topology
-/topology.png
+![Topology](topology.png)
 
 The topology consists of:
 - R1 – Main router
@@ -34,7 +34,7 @@ The topology consists of:
 ## IP Addressing
 
 | VLAN / Network | Network Address | Default Gateway |
-
+|---|---|---|
 | VLAN 10 – USERS | 192.168.10.0/24 | 192.168.10.1 |
 | VLAN 20 – SALES | 192.168.20.0/24 | 192.168.20.1 |
 | VLAN 30 – IT | 192.168.30.0/24 | 192.168.30.1 |
@@ -46,7 +46,7 @@ The topology consists of:
 A centralized DHCP server (192.168.10.10) provides IP addresses to all three VLANs.
 
 | DHCP Pool | Address Range | Default Gateway |
-
+|---|---|---|
 | USERS | 192.168.10.100–199 | 192.168.10.1 |
 | SALES | 192.168.20.100–199 | 192.168.20.1 |
 | IT | 192.168.30.100–199 | 192.168.30.1 |
